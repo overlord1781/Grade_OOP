@@ -7,7 +7,8 @@ class Car:
         self.color = color  # Цвет авто
         self.nois = self.__get_nois() # Приватный метод, результат работы которого записывается в атрибут nois
 
-    def start_the_engine(self):
+    @staticmethod
+    def start_the_engine():
         print('Вы завели двигатель')
 
     def __get_nois(self):
@@ -28,4 +29,4 @@ class Car:
 
 
 car1 = Car.get_list_auto('lada/1.2/red')
-print(car1.name)
+car1.start_the_engine()

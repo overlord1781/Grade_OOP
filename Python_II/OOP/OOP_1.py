@@ -27,5 +27,5 @@ class Car:
 
 
 
-car1 = Car.get_list_auto('lada/1.2/red')
-print(car1.name)
+lada_priora = Car()
+lada_priora.start_the_engine()
